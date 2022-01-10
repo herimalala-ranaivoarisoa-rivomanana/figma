@@ -11,6 +11,8 @@ module.exports = {
         'nav':'137px',
       },
       maxWidth:{
+        '1440':'1440px',
+        '1046':'1046px',
         'fullscreen':'1776px',
         'herolight':'1243.3px',
         'title':'672px',
@@ -34,6 +36,10 @@ module.exports = {
         'h4':['20px', {
           lineHeight: '20px',
           letterSpacing: '0.2px'}],
+        'h5':['16px', {
+          lineHeight: '23px',
+          letterSpacing: '0.1px'}],
+          
         'link':['15px', {
           lineHeight: '28px',
           letterSpacing: '0.2px'}],
