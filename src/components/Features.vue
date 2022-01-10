@@ -1,5 +1,5 @@
 <template>
-  <section class="max-w-[1777px] h-1042px m-auto">
+  <section class="max-w-fullscreen h-1362px m-auto">
     <div class="m-auto mb-2 center w-214px h-75px">
       <p class="font-Graphik font-normal text-h2 text-text-primary">{{title}}</p>
     </div>
@@ -39,6 +39,7 @@ export default {
                  description:`Slate helps you see how many more days you need to work 
                  to reach your financial goal.`},
                  ],
+      videoUrl:``,
       }
   },
 

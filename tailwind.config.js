@@ -12,6 +12,7 @@ module.exports = {
       },
       maxWidth:{
         'fullscreen':'1776px',
+        'herolight':'1243.3px',
         'title':'672px',
         'desc':'766px',
         'features':'869px',
@@ -58,6 +59,10 @@ module.exports = {
           secondary:'#374754',
           light:'#FFFFFF',
 
+        },
+        email:{
+          background:'#F4F4F4',
+          border:'E8E8E8',
         },
         background:{
           dark:'#252B42',

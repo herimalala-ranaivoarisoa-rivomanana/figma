@@ -1,11 +1,15 @@
 <template>
   <TheHeader />
   <Features />
+  <HeroLight />
+  <LightCta />
 </template>
 
 <script>
 import TheHeader from '@/components/TheHeader.vue'
 import Features from '@/components/Features.vue'
+import HeroLight from '@/components/HeroLight.vue'
+import LightCta from '@/components/LightCta.vue'
 
 
 export default {
@@ -13,6 +17,8 @@ export default {
   components: {
     TheHeader,
     Features,
+    HeroLight,
+    LightCta,
   }
 }
 </script>
