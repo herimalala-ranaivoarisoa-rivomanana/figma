@@ -1,19 +1,18 @@
 <template>
-
-    <TheHeader />
-
-
+  <TheHeader />
+  <Features />
 </template>
 
 <script>
 import TheHeader from '@/components/TheHeader.vue'
+import Features from '@/components/Features.vue'
 
 
 export default {
   name: 'App',
   components: {
     TheHeader,
-
+    Features,
   }
 }
 </script>

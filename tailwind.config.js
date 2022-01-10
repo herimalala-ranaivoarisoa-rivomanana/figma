@@ -11,10 +11,16 @@ module.exports = {
         'nav':'137px',
       },
       maxWidth:{
+        'fullscreen':'1776px',
         'title':'672px',
         'desc':'766px',
+        'features':'869px',
       },
       fontSize:{
+        'p':['18px',{
+          lineHeight:'25px',
+          letterSpacing:'02px'
+        }],
         'h1':['74px', {
           lineHeight: '84px',
           letterSpacing: '0.2px'}],
