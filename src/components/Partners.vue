@@ -7,7 +7,7 @@
       <p class=" font-Graphik font-normal text-h3 text-text-secondary">{{description}}</p>
     </div>
     <div class="m-auto mb-5 w-1096px h-auto flex flex-row  flex-wrap justify-between">
-      <div class="m-0 w-273px flex flex-col items-center"
+      <div class="m-0 w-273px border-border-gray flex flex-col items-center"
            v-for="partner in partners" :key="partner.id">
         <p class="m-0  font-Graphik font-normal text-h5 justify-center text-text-secondary">{{partner.name}}</p>
         <img class="m-0" :src="partner.logo" :alt="partner.title">

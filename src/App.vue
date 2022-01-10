@@ -4,14 +4,16 @@
   <HeroLight />
   <LightCta />
   <Partners/>
+  <Testimonials />
 </template>
 
 <script>
-import TheHeader from '@/components/TheHeader.vue'
-import Features from '@/components/Features.vue'
-import HeroLight from '@/components/HeroLight.vue'
-import LightCta from '@/components/LightCta.vue'
-import Partners from '@/components/Partners.vue'
+import TheHeader from '@/components/TheHeader.vue';
+import Features from '@/components/Features.vue';
+import HeroLight from '@/components/HeroLight.vue';
+import LightCta from '@/components/LightCta.vue';
+import Partners from '@/components/Partners.vue';
+import Testimonials from '@/components/Testimonials.vue';
 
 
 export default {
@@ -22,6 +24,7 @@ export default {
     HeroLight,
     LightCta,
     Partners,
+    Testimonials,
   }
 }
 </script>

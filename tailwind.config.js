@@ -51,6 +51,9 @@ module.exports = {
         'Graphik': ['Graphik'],
       },
       colors: {
+        border:{
+          gray:'#D8D8D8',
+        },
         blue: {
           primary: '#2091F9',
         },
