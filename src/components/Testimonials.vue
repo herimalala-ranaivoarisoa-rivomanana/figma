@@ -18,7 +18,7 @@
 
       </div>
     </div>
-    <button class="relative bg-blue-primary border-blue-primary rounded-full w-236px h-60px text-white ">Try for free</button>
+    <button class="mb-20 bg-blue-primary border-blue-primary rounded-full w-236px h-60px text-white ">Try for free</button>
   </section>
 </template>
 
