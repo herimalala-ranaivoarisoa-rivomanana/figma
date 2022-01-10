@@ -4,13 +4,15 @@ module.exports = {
   theme: {
 
     extend: {
-      lineHeight:{
-        '5.25':'5.25'
-      },
       margin:{
         'menu':'20px',
+        'logo':'19px',
         'social':'11px',
-        'nav':'135px',
+        'nav':'137px',
+      },
+      maxWidth:{
+        'title':'672px',
+        'desc':'766px',
       },
       fontSize:{
         'h1':['74px', {
