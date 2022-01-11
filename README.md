@@ -1,7 +1,8 @@
 # figmaland-business
+This is an integration project for my Vue3 assessment.
 
 ## Project setup
-```
+Please install dependencies with:
 npm install
 ```
 
