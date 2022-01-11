@@ -1,6 +1,6 @@
 <template>
   <section class="max-w-fullscreen h-924px m-auto">
-    <div class="m-auto max-w-herolight h-472px flex flex-row justify-between">
+    <div class="m-auto max-w-herolight h-472px flex flex-row items-center">
       <div class="m-0 w-535px h-357px flex flex-col items-start  ">
           <p class="m-auto mx-0 mb-2 w-335px h-130px font-Graphik font-normal text-h2 text-left text-text-primary">{{title}}</p>
           <p class="m-auto mx-0 my-0  w-532px h-100px  font-Graphik font-normal text-h3 text-left text-text-secondary">{{description}}</p>
