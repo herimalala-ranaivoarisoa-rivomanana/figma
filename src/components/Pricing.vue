@@ -2,7 +2,7 @@
   <section class="max-w-fullscreen m-auto bg-gray-600">
       <div class="m-auto mb-60 pt-20 w-1177px h-1155px bg-gray-600 ">
           <p class="mb-5 font-Graphik font-normal text-h2 text-white">Pricing</p>
-          <p class="mb-20 font-Graphik font-normal text-h3 text-white">{{pricingText}}</p>
+          <p class="w-532px h-80px m-auto mb-20 font-Graphik font-normal text-h3 text-white">{{pricingText}}</p>
           <div class="m-auto w-1105px h-693px flex flex-row items-center justify-around ">
             <div  v-for="tariff in tariffs" :key="tariff.id">
               <PriceCard :tariff="tariff"/>
