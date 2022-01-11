@@ -8,5 +8,5 @@ app.use(enforce.HTTPS({trustProtHeader: true}));
 app.use(serveStatic(__dirname + 'dist'));
 app.use(history());
 
-app.listen(process.env.PORT || '/dist');
+app.listen(process.env.PORT || 5000);
 

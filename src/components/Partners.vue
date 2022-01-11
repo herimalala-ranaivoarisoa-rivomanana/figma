@@ -1,5 +1,5 @@
 <template>
-  <section class="max-w-1440 h-auto m-auto">
+  <section class="max-w-fullscreen h-auto m-auto">
     <div class="m-auto mb-2 center w-214px h-75px">
       <p class="font-Graphik font-normal text-h2 text-text-primary">{{title}}</p>
     </div>
@@ -27,8 +27,8 @@ export default {
                    Slate is designed for freelancers`,
       partners:[{id: 1,name:`Google`,
                  logo:`images/google.png`},
-                {id: 2, name:`Amazone`,
-                 logo:`images/amazone.png`},
+                {id: 2, name:`Amazon`,
+                 logo:`images/amazon.png`},
                 {id: 3, name:`Microsoft`,
                  logo:`images/microsoft.png`},
                  {id: 4, name:`Uber`,
@@ -39,8 +39,8 @@ export default {
                  logo:`images/google.png`},
                 {id: 7, name:`Uber`,
                  logo:`images/uber.png`},
-                 {id: 8, name:`Amazone`,
-                 logo:`images/amazone.png`},
+                 {id: 8, name:`Amazon`,
+                 logo:`images/amazon.png`},
                  ],
       videoUrl:``,
       }
