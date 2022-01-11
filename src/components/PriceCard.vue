@@ -1,6 +1,6 @@
 <template>
   <div v-if="tariff.id%2===0">
-    <div class="m-auto w-335px h-693px bg-blue-primary border-blue-primary flex flex-col align-center">
+    <div class="m-auto w-335px h-693px py-11 rounded-xl bg-blue-primary border-blue-primary flex flex-col align-center">
       <p class="m-auto font-Graphik font-bold text-h4 text-white">{{tariff.name}}</p>
       <div class="flex justify-center">
         <p class="mr-2.5 font-Graphik font-bold text-h1 text-white">{{tariff.price}}</p>
@@ -13,7 +13,7 @@
       
       
       <div v-for="(feature,index) in tariff.features" :key="index">
-        <p class="m-auto text-white">{{feature}}</p>
+        <p class="m-auto font-Graphik font-normal text-link text-white">{{feature}}</p>
       </div>
       <button class="w-236px h-56px m-auto bg-white border-white rounded-full 
                     font-Graphik font-normal text-h4 justify-center">
@@ -22,7 +22,7 @@
     </div>
   </div>
   <div v-else>
-    <div class="m-auto w-335px h-607px bg-white border-white flex flex-col align-center">
+    <div class="m-auto w-335px h-607px rounded-xl bg-white border-white flex flex-col align-center">
       <p class="m-auto font-Graphik font-bold text-h4">{{tariff.name}}</p>
       <div class="flex justify-center">
         <p class="mr-2.5 font-Graphik font-bold text-h1">{{tariff.price}}</p>
