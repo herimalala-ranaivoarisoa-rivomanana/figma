@@ -1,6 +1,5 @@
 <template>
-  <section class="max-w-fullscreen m-auto">
-      <TheHeader />
+  <section class="max-w-fullscreen m-auto bg-gray-600">
       <div class="m-auto mb-60 pt-20 w-1177px h-1155px bg-gray-600 ">
           <p class="mb-5 font-Graphik font-normal text-h2 text-white">Pricing</p>
           <p class="mb-20 font-Graphik font-normal text-h3 text-white">{{pricingText}}</p>
