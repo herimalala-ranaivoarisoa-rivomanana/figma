@@ -1,14 +1,14 @@
 <template>
-  <section class="max-w-fullscreen h-924px m-auto">
+  <section class="max-w-fullscreen h-924px mb-24 m-auto">
     <p class="m-auto mb-5 font-Graphik font-normal text-h2">{{title}}</p>
     <p class="m-auto w-552px h-100px mb-20 font-Graphik font-normal text-h3 ">{{description}}</p>
     <div class="m-auto w-1228px flex flex-row center  justify-center">
-      <div class="m-0 w-535px h-357px border-gray-900 rounded-2xl flex flex-col items-center  ">
+      <div class="w-453px h-669px  border-gray-900 shadow-md rounded-2xl flex flex-col items-center  ">
           <p class="m-auto mx-0 mb-12 w-335px h-130px justify-center font-Graphik font-bold text-h4 text-left text-text-primary">{{title}}</p>
-          <input class="w-353px h-54px mb-2.5 mr-3 pl-5 rounded-2 bg-email-background border-email-border"  v-model="name"  placeholder="Your name"/>
-          <input class="w-353px h-54px mb-2.5 mr-3 pl-5 rounded-2 bg-email-background border-email-border"  v-model="email"  placeholder="Your email"/>
-          <input class="w-353px h-193px mb-2.5  mr-3 pl-5 rounded-2 bg-email-background border-email-border"  v-model="message"  placeholder="Your message"/>
-          <button class="mt-14 bg-blue-primary border-blue-primary rounded-full w-236px h-60px text-white ">Try for free</button>
+          <input class="w-353px h-54px mb-12 mr-3 pl-5 rounded-2 bg-email-background border-email-border"  v-model="name"  placeholder="Your name"/>
+          <input class="w-353px h-54px mb-12 mr-3 pl-5 rounded-2 bg-email-background border-email-border"  v-model="email"  placeholder="Your email"/>
+          <input class="w-353px h-193px mb-12  mr-3 pl-5 rounded-2 bg-email-background border-email-border"  v-model="message"  placeholder="Your message"/>
+          <button class="mt-14 mb-20 bg-blue-primary border-blue-primary rounded-full w-236px h-60px text-white ">Try for free</button>
       </div>
       <div>
         <div class="flex flex-col">

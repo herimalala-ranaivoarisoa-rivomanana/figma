@@ -76,7 +76,8 @@ module.exports = {
         background:{
           dark:'#252B42',
           light:'#FFFFFF',
-          gradient:'#222B3'
+          gradient:'#222B3',
+          fill:'#222B32'
         },
       }
     },

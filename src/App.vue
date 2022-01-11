@@ -7,10 +7,12 @@
   <Testimonials />
   <Pricing />
   <Contact />
+  <TheFooter/>
 </template>
 
 <script>
 import TheHeader from '@/components/TheHeader.vue';
+import TheFooter from '@/components/TheFooter.vue';
 import Features from '@/components/Features.vue';
 import HeroLight from '@/components/HeroLight.vue';
 import LightCta from '@/components/LightCta.vue';
@@ -23,6 +25,7 @@ export default {
   name: 'App',
   components: {
     TheHeader,
+    TheFooter,
     Features,
     HeroLight,
     LightCta,

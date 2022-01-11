@@ -6,7 +6,7 @@
 
 <script>
 export default {
-name:'phone'
+name:'Phone'
 }
 </script>
 
