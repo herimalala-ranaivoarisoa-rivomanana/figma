@@ -15,15 +15,15 @@
           <div class="flex flex-row justify-between">
             <div class="flex flex-col items-center">
               <a><div class="text-blue-primary"><icon-base class="w-8 h-8"><Address/></icon-base></div></a>
-              <p class="w-293px h-46px">6386 Spring St undefined Anchorage,Georgia 12473 United States</p>
+              <p class="w-313px h-66px font-Graphik font-normal text-h5">6386 Spring St undefined Anchorage,Georgia 12473 United States</p>
             </div>
             <div class="flex flex-col items-center">
               <a><div class="text-blue-primary"><icon-base class="w-8 h-8"><Phone/></icon-base></div></a>
-              <p class="w-117px h-23px">(843) 555-0130</p>
+              <p class="w-137px h-43px font-Graphik font-normal text-h5">(843) 555-0130</p>
             </div>
             <div class="flex flex-col items-center">
               <a><div class="text-blue-primary"><icon-base class="w-8 h-8"><Envelop/></icon-base></div></a>
-              <p class="w-227px h-46px">willie.jennings@example.com</p>
+              <p class="w-245px h-43px font-Graphik font-normal text-h5">willie.jennings@example.com</p>
             </div>
           </div>
           <img class="m-auto" :src="image" :alt="title">
