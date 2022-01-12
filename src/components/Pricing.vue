@@ -1,5 +1,5 @@
 <template>
-  <section class="w-screen m-auto bg-background-fill">
+  <section class="w-full m-auto bg-background-fill">
       <div class="m-auto mb-60 pt-20 w-1177px 2xl:h-1155px xl:h-1155px lg:h-1155px">
           <p class="mb-5 font-Graphik font-normal text-h2 text-white">Pricing</p>
           <p class="w-532px 2xl:h-80px xl:h-80px lg:h-80pxm-auto mb-20 font-Graphik font-normal text-h3 text-white">{{pricingText}}</p>

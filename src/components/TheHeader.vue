@@ -1,6 +1,6 @@
 <template>
-  <header class="w-screen h-1042px  m-auto">
-      <img class="w-screen m-0 absolute top-0 -z-10
+  <header class="w-full h-1042px  m-auto">
+      <img class="w-full m-0 absolute top-0 -z-10
                 2xl:h-930pxpx
                 xl:h-670px
                 lg:h-536px
@@ -8,7 +8,7 @@
                 ms:h-863px
                 ems:h-863px" 
                 srcset="images/background.png" alt="banner">
-      <nav class="w-screen m-auto  relative  flex 
+      <nav class="w-full m-auto  relative  flex 
                 esm:justify-between esm:my-3
                 sm:justify-between sm:my-3
                 md:justify-between md:my-3

@@ -1,6 +1,12 @@
 <template>
-  <section class="w-screen h-724px m-auto">
-    <div class="m-auto max-w-herolight h-724px flex flex-row ">
+  <section class="w-full h-724px m-auto">
+    <div class="m-auto max-w-herolight h-724px flex
+    2xl:flex-row  2xl:flex-wrap 2xl:justify-between
+    xl:flex-row  xl:flex-wrap xl:justify-between
+    lg:flex-row  lg:flex-wrap lg:justify-between
+    md:flex-col sm:flex-col esm:flex-col
+    md:center sm:center esm:center">
+    ">
       <img class="m-auto w-677px h-574px " :src="image" :alt="title">
       <div class="m-0 w-535px align-right h-357px flex flex-col items-start">
         <p class="m-0 mb-6 font-Graphik font-bold text-h4 text-left text-text-primary">{{title}}</p>
