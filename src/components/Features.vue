@@ -1,5 +1,5 @@
 <template>
-  <section class="max-w-fullscreen h-1362px m-auto">
+  <section class="w-screen h-1362px m-auto">
     <div class="m-auto mb-2 center w-214px h-75px">
       <p class="font-Graphik font-normal text-h2 text-text-primary">{{title}}</p>
     </div>
@@ -14,7 +14,7 @@
         <p class=" font-Graphik font-normal text-p justify-center text-text-secondary">{{feature.description}}</p>
       </div>
     </div>
-    <div class="max-w-full-fullscreen ">
+    <div class="w-screen md:hidden sm:hidden esm:hidden">
       <img class="m-auto hover:mx-logo" src="images/videoscreen.png">
     </div>
      

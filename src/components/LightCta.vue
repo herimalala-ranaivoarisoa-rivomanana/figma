@@ -1,5 +1,5 @@
 <template>
-  <section class="max-w-fullscreen h-724px m-auto">
+  <section class="w-screen h-724px m-auto">
     <div class="m-auto max-w-herolight h-724px flex flex-row ">
       <img class="m-auto w-677px h-574px " :src="image" :alt="title">
       <div class="m-0 w-535px align-right h-357px flex flex-col items-start">

@@ -1,5 +1,5 @@
 <template>
-  <section class="max-w-fullscreen m-auto p-36 flex flex-row justify-around bg-background-fill ">
+  <section class="w-screen m-auto p-36 flex flex-row justify-around bg-background-fill ">
   <div v-for="(item, index) in Object.keys(contents.items)" :key="index" >
     <p class="text-white font-Graphik font-bold text-h5" >{{item}}</p>
     <div class="text-white font-Graphik font-normal text-h5" v-for="(el,i) in contents.items[item]" :key="i">

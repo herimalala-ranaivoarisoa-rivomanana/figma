@@ -1,5 +1,5 @@
 <template>
-  <TheHeader />
+  <TheHeader :icons="icons" />
   <Features />
   <HeroLight />
   <LightCta />
@@ -21,6 +21,7 @@ import Testimonials from '@/components/Testimonials.vue';
 import Pricing from '@/components/Pricing.vue';
 import Contact from '@/components/Contact.vue';
 
+
 export default {
   name: 'App',
   components: {
@@ -36,7 +37,19 @@ export default {
   },
     data(){
     return {
-     
+      icons:{
+      socialMedia:[
+          {id:1,name:'tweeter',link:"sources/tweeter.svg"},
+          {id:2,name:'facebook',link:"sources/facebook.svg"},
+          {id:2,name:'linkedin',link:"sources/linkedin.svg"},
+          ],
+      mediaCom:[
+          {id:3,name:'address',link:"sources/address.svg"},
+          {id:1,name:'phone',link:"sources/phone.svg"},
+          {id:2,name:'email',link:"sources/email.svg"},
+          ],
+      logo:{id:1,name:'logo',link:"sources/dark.svg"}
+      }
     }
   }
 }

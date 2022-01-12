@@ -2,13 +2,20 @@ module.exports = {
   purge:["./src/**/*.vue"],
   content: [],
   theme: {
-
+    screens:{
+      'esm': {'min': '36px','max': '480px'},
+      'sm': {'min': '640px', 'max': '767px'},
+      'md': {'min': '768px', 'max': '1023px'},
+      'lg': {'min': '1024px', 'max': '1279px'},
+      'xl': {'min': '1280px', 'max': '1535px'},
+      '2xl': {'min': '1536px'},
+    },
     extend: {
       margin:{
         'menu':'20px',
         'logo':'19px',
-        'social':'11px',
-        'nav':'137px',
+        'social':'14px',
+        'nav':'132px',
       },
       maxWidth:{
         '1440':'1440px',
