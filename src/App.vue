@@ -1,13 +1,13 @@
 <template>
   <TheHeader :icons="icons" :isMobile="mobile" />
-  <Features />
-  <HeroLight />
-  <LightCta />
-  <Partners/>
-  <Testimonials />
-  <Pricing />
-  <Contact />
-  <TheFooter/>
+  <Features :isMobile="mobile"/>
+  <HeroLight :isMobile="mobile"/>
+  <LightCta :isMobile="mobile"/>
+  <Partners :isMobile="mobile"/>
+  <Testimonials :isMobile="mobile" />
+  <Pricing :isMobile="mobile"/>
+  <Contact :isMobile="mobile"/>
+  <TheFooter :isMobile="mobile"/>
 </template>
 
 <script>
