@@ -24,19 +24,19 @@
                 esm:top-2.5 esm:mb-10">
         <div class="mr-nav flex items-center justify-center">
           <a class="font-Graphik font-normal  text-link text-white 
-                    mx-menu md:hidden sm:hidden esm:hidden" 
+                    mx-menu" 
+                    v-show="!isMobile"
                     v-for="menu in menus" :key="menu"> 
                     {{menu.value}}
           </a>
           <img class="mx-logo" :src="icons.logo.link" :alt="icons.logo.name">
         </div>
         <div class="2xl:ml-nav xl:ml-nav lg:ml-nav flex items-center">
-          <a class="mx-social md:hidden sm:hidden esm:hidden " v-for="social in icons.socialMedia" :key="social.id">
+          <a class="mx-social" v-show="!isMobile" v-for="social in icons.socialMedia" :key="social.id">
               <img class="w-33.32px h-33.32px" :src="social.link" :alt="social.name">
           </a>
-
         </div>
-          <img class="w-33.32px mr-6 h-33.32px 2xl:hidden xl:hidden lg:hidden" :src="mobileMenu.link" :alt="mobileMenu.name">
+          <img class="w-33.32px mr-6 h-33.32px " v-show="isMobile" :src="mobileMenu.link" :alt="mobileMenu.name">
       </nav>
       <p class="m-auto center relative text-white
                 2xl:w-672px 2xl:h-168px 2xl:mb-8 
@@ -65,6 +65,7 @@
 
 <script>
 
+
 export default {
   name:'TheHeader',
   components:{
@@ -72,6 +73,9 @@ export default {
     props: {
       icons: {
         type: Object
+    },
+    isMobile: {
+        type: Boolean
     },
   },
   data(){
@@ -84,7 +88,6 @@ export default {
       mobileMenu:{id:1,name:'mobile',link:"sources/mobile/menu.svg"}
       }
   },
-
 }
 </script>
 

@@ -1,5 +1,5 @@
 <template>
-  <TheHeader :icons="icons" />
+  <TheHeader :icons="icons" :isMobile="mobile" />
   <Features />
   <HeroLight />
   <LightCta />
@@ -22,6 +22,7 @@ import Pricing from '@/components/Pricing.vue';
 import Contact from '@/components/Contact.vue';
 
 
+
 export default {
   name: 'App',
   components: {
@@ -37,6 +38,8 @@ export default {
   },
     data(){
     return {
+    width: document.documentElement.clientWidth,
+    height: document.documentElement.clientHeight,
       icons:{
       socialMedia:[
           {id:1,name:'tweeter',link:"sources/tweeter.svg"},
@@ -51,8 +54,27 @@ export default {
       logo:{id:1,name:'logo',link:"sources/dark.svg"}
       }
     }
+  },
+  computed: {
+  mobile() {
+      return this.width <1024 ? true : false
+
+    }
+  },
+  mounted() {
+    window.addEventListener('resize', this.getDimensions);
+  },
+  unmounted() {
+    window.removeEventListener('resize', this.getDimensions);
+  },
+  methods: {
+    getDimensions() {
+      this.width = document.documentElement.clientWidth;
+      this.height = document.documentElement.clientHeight;
+    }
   }
-}
+
+  }
 </script>
 
 <style>
