@@ -1,13 +1,13 @@
 <template>
-  <TheHeader  :icons="icons" :isMobile="mobile" :size="screen" />
-  <Features :isMobile="mobile"/>
-  <HeroLight :isMobile="mobile"/>
-  <LightCta :isMobile="mobile"/>
+  <TheHeader :icons="icons" :isMobile="mobile" :size="screen" />
+  <Features  :isMobile="mobile"/>
+  <HeroLight  :isMobile="mobile"/>
+  <LightCta  :isMobi:le="mobile"/>
   <Partners :isMobile="mobile"/>
-  <Testimonials :isMobile="mobile" />
+  <Testimonials sMobile="mobile" />
   <Pricing :isMobile="mobile"/>
-  <Contact  :isMobile="mobile"/>
-  <TheFooter  :isMobile="mobile"/>
+  <Contact :isMobile="mobile"/>
+  <TheFooter :isMobile="mobile"/>
 </template>
 
 <script>
@@ -57,7 +57,7 @@ export default {
   },
   computed: {
   mobile() {
-      return this.width <481 ? true : false
+      return this.width <640 ? true : false
 
     }
   },
