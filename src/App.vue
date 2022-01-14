@@ -57,7 +57,7 @@ export default {
   },
   computed: {
   mobile() {
-      return this.width <640 ? true : false
+      return this.width <481 ? true : false
 
     }
   },

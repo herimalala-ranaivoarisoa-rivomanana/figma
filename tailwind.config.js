@@ -15,7 +15,7 @@ module.exports = {
         'menu':'20px',
         'logo':'19px',
         'social':'14px',
-        'nav':'132px',
+        'logo-social':'240px',
       },
       maxWidth:{
         '1440':'1440px',

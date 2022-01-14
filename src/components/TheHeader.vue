@@ -1,11 +1,12 @@
 <template>
-  <header>
+  <header class="mb-80">
     <div class="w-full m-auto center h-863px absolute -z-10" >
       <img class="m-auto bsolute -z-10 h-863px object-cover" 
               srcset="images/background.png" alt="banner">
     </div>
-    <nav class="w-full  relative pt-8 z-10 flex items-center justify-center
-                mb-36">
+    <nav class="w-full  relative z-10 flex items-center justify-center
+                2xl:pt-8 xl:pt-8 lg:pt-8 md:pt-8 sm:pt-0
+                2xl:mb-32 xl:mb-32 lg:mb-32  md:mb-32 sm:mb-32">
       <div  v-if="!isMobile" class="m-0">     
         <a class="font-Graphik font-normal  text-link text-white 
             mx-menu" v-for="menu in menus" :key="menu">{{menu.value}}</a>
@@ -28,20 +29,17 @@
       <p class="m-auto p-0 font-Graphik
                 font-bold text-h1 text-white
                 2xl:mx-60 xl:mx-60 lg:mx-0 
-                md:mx-0 sm:mx-8
-                2xl:my-8 xl:my-6 lg:my-5
-                md:my-3 sm:my-3 mb-80
-                lg:text-h2 lg:font-bold">
+                md:mx-0 sm:mx-0 
+                lg:text-h2 lg:font-bold
+                sm:font-normal sm:text-h2
+                mb-8">
                 {{pageTitle}}
                 </p>
       <p class="m-auto p-0  my-0 font-Graphik
                 font-normal text-h2 text-white
                 2xl:mx-0 xl:mx-0 lg:mx-0
                 md:mx-0 sm:mx-8
-                2xl:my-8 xl:my-8 lg:my-8
-                md:my-3 sm:my-3
-                lg:text-h3
-                  mb-36">
+                lg:text-h3 mb-8">
                 {{isMobile?pageDescription.mobile:pageDescription.desktop}}   
                 </p>
     </div>

@@ -1,11 +1,11 @@
 <template>
-  <header>
+  <header class="mb-80">
     <div class="w-full  absolute -z-10" >
       <img class="m-auto sm:h-863px sm:object-cover" 
               srcset="images/background.png" alt="banner">
     </div>
     <nav class="w-full  relative pt-8 z-10 flex items-center justify-center
-                mb-40">
+                mb-40 sm:mb-20">
       <div  v-if="!isMobile" class="m-0">     
         <a class="font-Graphik font-normal  text-link text-white 
             mx-menu" v-for="menu in menus" :key="menu">{{menu.value}}</a>
@@ -25,7 +25,8 @@
     <div class="m-auto center relative">
       <p class="w-766px m-auto text-white font-Graphik 
                 font-bold text-h1 mb-10
-                md:text-h2 sm:text-h2">
+                md:text-h2 
+                sm:font-normal sm:text-h3">
             {{pageTitle}}
       </p>
       <p class="w-1220px m-auto text-white font-Graphik 
