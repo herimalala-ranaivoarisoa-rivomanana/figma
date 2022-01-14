@@ -19,7 +19,7 @@ export default {
       title:`Fastest way to organize`,
       description:`Most calendars are designed for teams. 
                    Slate is designed for freelancers`,
-      image:`images/screencontent.png`
+      image:`sources/videoscreen.svg`
       }
   },
 

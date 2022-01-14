@@ -1,7 +1,7 @@
 <template>
-  <TheHeader :icons="icons" :isMobile="mobile" />
-  <Features :isMobile="mobile"/>
-  <HeroLight :isMobile="mobile"/>
+  <TheHeader  :icons="icons" :isMobile="mobile" :size="screen" />
+  <Features  :isMobile="mobile"/>
+  <HeroLight  :isMobile="mobile"/>
   <LightCta :isMobile="mobile"/>
   <Partners :isMobile="mobile"/>
   <Testimonials :isMobile="mobile" />
@@ -39,7 +39,7 @@ export default {
     data(){
     return {
     width: document.documentElement.clientWidth,
-    height: document.documentElement.clientHeight,
+    screen:'2xl',
       icons:{
       socialMedia:[
           {id:1,name:'tweeter',link:"sources/tweeter.svg"},
@@ -57,7 +57,7 @@ export default {
   },
   computed: {
   mobile() {
-      return this.width <1024 ? true : false
+      return this.width <640 ? true : false
 
     }
   },
@@ -70,7 +70,11 @@ export default {
   methods: {
     getDimensions() {
       this.width = document.documentElement.clientWidth;
-      this.height = document.documentElement.clientHeight;
+      if(this.width<=640) this.screen='sm'
+      if(this.width>640 && this.width<768) this.screen='md'
+      if(this.width>=768 && this.width<1024) this.screen='lg'
+      if(this.width>=1204 && this.width< 1536) this.screen='xl'
+      if (this.width>=1536) this.screen='2xl'
     }
   }
 
