@@ -22,25 +22,25 @@
         <img class="w-33.32px h-33.32px mr-2.5" :src="mobileMenu.link" :alt="mobileMenu.name">
       </div>
     </nav>
-    <div class="2xl:w-1280px xl:w-1280px lg:w-1280px 
-                md:w-413px sm:w-344px
+    <div class="2xl:w-1280px xl:w-1280px lg:w-640px 
+                md:w-640px sm:w-3200px
                 m-auto center relative">
       <p class="m-auto p-0 font-Graphik
                 font-bold text-h1 text-white
-                2xl:mx-60 xl:mx-60 lg:mx-60
-                md:mx-10 sm:mx-8
+                2xl:mx-60 xl:mx-60 lg:mx-0 
+                md:mx-0 sm:mx-8
                 2xl:my-8 xl:my-6 lg:my-5
-                md:my-4 sm:my-3 mb-80
-                md:text-h2 sm:text-h2">
+                md:my-3 sm:my-3 mb-80
+                lg:text-h2 lg:font-bold">
                 {{pageTitle}}
                 </p>
       <p class="m-auto p-0  my-0 font-Graphik
                 font-normal text-h2 text-white
                 2xl:mx-0 xl:mx-0 lg:mx-0
-                md:mx-10 sm:mx-8
-                2xl:my-8 xl:my-6 lg:my-5
-                md:my-4 sm:my-3
-                md:text-h2 sm:text-h2
+                md:mx-0 sm:mx-8
+                2xl:my-8 xl:my-8 lg:my-8
+                md:my-3 sm:my-3
+                lg:text-h3
                   mb-36">
                 {{isMobile?pageDescription.mobile:pageDescription.desktop}}   
                 </p>
