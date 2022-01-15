@@ -3,7 +3,7 @@
     <div class="m-auto mb-2 center w-214px h-75px">
       <p class="font-Graphik font-normal text-h2 text-text-primary">{{title}}</p>
     </div>
-    <div class="m-auto mb-20 center w-552px h-100px">
+    <div class="m-auto mb-20 center max-w-552 h-100px">
       <p class=" font-Graphik font-normal text-h3 text-text-secondary">{{description}}</p>
     </div>
       <div class="m-auto mb-5 center max-w-1096 flex flex-wrap justify-center items-center">

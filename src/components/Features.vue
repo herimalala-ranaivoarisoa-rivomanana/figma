@@ -7,7 +7,7 @@
       <p class=" font-Graphik font-normal text-h3 text-text-secondary">{{description}}</p>
     </div>
     <div v-if="isMobile" class="m-auto mb-20">
-      <img src="sources/videoscreen.svg" alt="videoscreen">
+      <img src="sources/mobile/videoscreen.svg" alt="videoscreen">
     </div>
     <div class="m-auto flex flex-row flex-wrap  justify-center">
       <div class="mx-5 shrink-0 flex flex-col center"
@@ -22,9 +22,9 @@
           <p class="mb-5font-Graphik font-normal text-p justify-center text-text-secondary">{{feature.description}}</p>
         </div>
       </div>
-          <div v-if="!isMobile" class="w-full m-auto">
-      <img  class="m-auto mx-logo" src="images/videoscreen.png">
     </div>
+    <div v-if="!isMobile" class="m-auto shrink-1">
+      <img  class="m-auto mx-logo" src="images/videoscreen.png">
     </div>
 </section>
 </template>
