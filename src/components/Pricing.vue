@@ -1,11 +1,9 @@
 <template>
-  <section class="w-full m-auto bg-background-fill">
-      <div class="m-auto mb-60 pt-20 w-1177px 2xl:h-1155px xl:h-1155px lg:h-1155px">
+  <section class="m-auto bg-background-fill mb-20">
+      <div class="m-auto">
           <p class="mb-5 font-Graphik font-normal text-h2 text-white">Pricing</p>
-          <p class="w-532px 2xl:h-80px xl:h-80px lg:h-80pxm-auto mb-20 font-Graphik font-normal text-h3 text-white">{{pricingText}}</p>
-          <div class="m-auto w-1105px h-693px flex flex-row items-center justify-around 
-           md:flex-col sm:flex-col esm:flex-col
-           md:justify-center sm:justify-center esm:justify-center">
+          <p class="m-auto max-w-552 mb-8 font-Graphik font-normal text-h3 text-white">{{pricingText}}</p>
+          <div class="m-auto flex flex-row flex-wrap justify-center items-center ">
             <div  v-for="tariff in tariffs" :key="tariff.id">
               <PriceCard :tariff="tariff"/>
             </div>

@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full h-924px m-auto">
+  <section class="w-full m-auto mb-20">
     <div class="m-auto max-w-herolight h-472px flex flex-row items-center flex-wrap shrink-0">
       <div class="w-418px h-355px m-auto flex flex-col ">
           <p class="m-auto mx-0 mb-2 font-Graphik font-normal text-h2 text-left text-text-primary">{{title}}</p>

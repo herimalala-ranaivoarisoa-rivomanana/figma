@@ -1,14 +1,10 @@
 <template>
-  <section class="w-full h-724px m-auto">
-    <div class="m-auto max-w-herolight h-724px flex
-    2xl:flex-row  2xl:flex-wrap 2xl:justify-between
-    xl:flex-row  xl:flex-wrap xl:justify-between
-    lg:flex-row  lg:flex-wrap lg:justify-between
-    md:flex-col sm:flex-col esm:flex-col
-    md:center sm:center esm:center">
-    ">
-      <img class="m-auto w-677px h-574px " :src="image" :alt="title">
-      <div class="m-0 w-535px align-right h-357px flex flex-col items-start">
+  <section class="w-full m-auto">
+    <div class="m-auto flex flex-wrap justify-center">
+      <div class="w-477px h-532px mx-8">
+           <img class="m-0" :src="image" :alt="title">
+      </div>
+      <div class="m-0 mx-8 w-477px h-532px align-right  flex flex-col items-start">
         <p class="m-0 mb-6 font-Graphik font-bold text-h4 text-left text-text-primary">{{title}}</p>
         <p class="m-0 mb-6 font-Graphik font-normal text-h2 text-left text-text-secondary">{{description}}</p>
         <p class="m-0 mb-6 font-Graphik font-bold text-h4 text-left text-text-primary">{{title}}</p>

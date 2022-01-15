@@ -12,10 +12,10 @@
             mx-menu" v-for="menu in menus" :key="menu">{{menu.value}}</a>
       </div>
       <div>
-          <img :src="icons.logo.link" :alt="icons.logo.name">
+          <img :src="datas.logo.link" :alt="datas.logo.name">
       </div>
       <div v-if="!isMobile" class="m-0 ml-logo-social flex flex-row items-center ">
-          <a class="mx-social"  v-for="social in icons.socialMedia" :key="social.id">
+          <a class="mx-social"  v-for="social in datas.socialMedia" :key="social.id">
             <img class="w-33.32px h-33.32px" :src="social.link" :alt="social.name">
           </a>
       </div>
@@ -26,15 +26,11 @@
     <div class="2xl:w-1280px xl:w-1280px lg:w-640px 
                 md:w-640px sm:w-3200px
                 m-auto center relative">
-      <p class="m-auto p-0 font-Graphik
-                font-bold text-h1 text-white
-                2xl:mx-60 xl:mx-60 lg:mx-0 
-                md:mx-0 sm:mx-0 
-                lg:text-h2 lg:font-bold
-                sm:font-normal sm:text-h2
-                mb-8">
+      <p :class="isMobile?`
+                 m-auto font-Graphik font-normale text-h2 mb-8 text-white`:
+                `w-692px  m-auto font-Graphik font-bold text-h1 mb-8 text-white`"> 
                 {{pageTitle}}
-                </p>
+      </p>
       <p class="m-auto p-0  my-0 font-Graphik
                 font-normal text-h2 text-white
                 2xl:mx-0 xl:mx-0 lg:mx-0
@@ -43,7 +39,7 @@
                 {{isMobile?pageDescription.mobile:pageDescription.desktop}}   
                 </p>
     </div>
-    <button class="relative bg-blue-primary border-blue-primary rounded-full w-256px h-52px text-white ">Try for free</button>
+    <button class="relative bg-blue-primary border-blue-primary rounded-full w-256px mb-60 h-52px text-white ">Try for free</button>
 
   </header>
 </template>
@@ -56,13 +52,13 @@ export default {
   components:{
   },
     props: {
-      icons: {
+      datas: {
         type: Object
     },
     isMobile: {
         type: Boolean
     },
-    size: {
+    screen: {
         type: String
     },
   },

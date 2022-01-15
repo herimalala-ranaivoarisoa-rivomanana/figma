@@ -1,13 +1,13 @@
 <template>
-  <TheHeader :icons="icons" :isMobile="mobile" :size="screen" />
-  <Features  :isMobile="mobile"/>
-  <HeroLight  :isMobile="mobile"/>
-  <LightCta  :isMobi:le="mobile"/>
-  <Partners :isMobile="mobile"/>
-  <Testimonials sMobile="mobile" />
-  <Pricing :isMobile="mobile"/>
-  <Contact :isMobile="mobile"/>
-  <TheFooter :isMobile="mobile"/>
+  <TheHeader :isMobile="mobile" :datas="datas" :sWidth="sWidth" :screen="screen" />
+  <Features :isMobile="mobile" :datas="datas" :sWidth="sWidth"/>
+  <HeroLight :isMobile="mobile" :datas="datas" :sWidth="sWidth"/>
+  <LightCta :isMobile="mobile" :datas="datas" :sWidth="sWidth"/>
+  <Partners :isMobile="mobile" :datas="datas" :sWidth="sWidth"/>
+  <Testimonials :isMobile="mobile" :datas="datas" :sWidth="sWidth"/>
+  <Pricing :isMobile="mobile" :datas="datas" :sWidth="sWidth"/>
+  <Contact :isMobile="mobile" :datas="datas" :sWidth="sWidth"/>
+  <TheFooter :isMobile="mobile" :datas="datas" :sWidth="sWidth"/>
 </template>
 
 <script>
@@ -20,8 +20,6 @@ import Partners from '@/components/Partners.vue';
 import Testimonials from '@/components/Testimonials.vue';
 import Pricing from '@/components/Pricing.vue';
 import Contact from '@/components/Contact.vue';
-
-
 
 export default {
   name: 'App',
@@ -40,27 +38,30 @@ export default {
     return {
     width: document.documentElement.clientWidth,
     screen:'2xl',
-      icons:{
+      datas:{
       socialMedia:[
-          {id:1,name:'tweeter',link:"sources/tweeter.svg"},
-          {id:2,name:'facebook',link:"sources/facebook.svg"},
-          {id:2,name:'linkedin',link:"sources/linkedin.svg"},
+          {id:1,name:'tweeter',link:"sources/socialMedia/Background/tweeter.svg"},
+          {id:2,name:'facebook',link:"sources/socialMedia/Background/facebook.svg"},
+          {id:2,name:'linkedin',link:"sources/socialMedia/Background/linkedin.svg"},
           ],
       mediaCom:[
-          {id:3,name:'address',link:"sources/address.svg"},
-          {id:1,name:'phone',link:"sources/phone.svg"},
-          {id:2,name:'email',link:"sources/email.svg"},
+          {id:3,name:'address',detail:'6386 Spring St undefined Anchorage,Georgia 12473 United States', link:"sources/mediaCom/address.svg"},
+          {id:1,name:'phone',detail:'(843) 555-0130', link:"sources/mediaCom/phone.svg"},
+          {id:2,name:'email',detail:'willie.jennings@example.com', link:"sources/mediaCom/email.svg"},
           ],
-      logo:{id:1,name:'logo',link:"sources/dark.svg"}
-      }
+      logo:{id:1,name:'logo',link:"sources/dark.svg"},
+      },
     }
   },
   computed: {
   mobile() {
       return this.width <640 ? true : false
-
-    }
+    },
+  sWidth(){
+      return this.width
   },
+  },
+
   mounted() {
     window.addEventListener('resize', this.getDimensions);
   },

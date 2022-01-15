@@ -1,6 +1,6 @@
 <template>
-  <div v-if="tariff.id%2===0">
-    <div class="m-auto w-335px h-693px py-11 rounded-xl bg-blue-primary border-blue-primary flex flex-col align-center">
+  <div class="m-auto" v-if="tariff.id%2===0">
+    <div class="m-8 shrink-0 w-335px h-693px py-11 rounded-xl bg-blue-primary border-blue-primary flex flex-col align-center">
       <p class="m-auto font-Graphik font-bold text-h4 text-white">{{tariff.name}}</p>
       <div class="flex justify-center">
         <p class="mr-2.5 font-Graphik font-bold text-h1 text-white">{{tariff.price}}</p>

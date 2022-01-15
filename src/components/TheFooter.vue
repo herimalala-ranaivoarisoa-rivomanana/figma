@@ -1,59 +1,47 @@
 <template>
-  <section class="w-full m-auto p-36 flex flex-row justify-around bg-background-fill ">
-  <div v-for="(item, index) in Object.keys(contents.items)" :key="index" >
-    <p class="text-white font-Graphik font-bold text-h5" >{{item}}</p>
-    <div class="text-white font-Graphik font-normal text-h5" v-for="(el,i) in contents.items[item]" :key="i">
-      {{el.name}}
+  <section :class="sWidth<780?`w-full m-auto p-36 flex flex-col items-center bg-background-fill`:
+                            `w-full m-auto p-36 flex flex-row justify-around bg-background-fill`">
+    <div class="m-5" v-for="(item, index) in Object.keys(contents.items)" :key="index" >
+      <p class="text-white font-Graphik font-bold text-h5" >{{item}}</p>
+      <div class="text-white m-5 font-Graphik font-normal text-h5" v-for="(el,i) in contents.items[item]" :key="i">
+        {{el.name}}
+      </div>
     </div>
-  </div>
-      <div>
-        <div class="flex flex-col">
-          <div class="flex flex-col flex-start">
-            <div class="flex  ">
-              <a><div class="text-white"><icon-base class="w-8 h-8"><Address/></icon-base></div></a>
-              <p class="w-313px h-66px font-Graphik font-normal text-h5 text-white">{{contents.infosContact.address}}</p>
-            </div>
-            <div class="flex flex-row items-center">
-              <a><div class="text-white"><icon-base class="w-8 h-8"><Phone/></icon-base></div></a>
-              <p class="w-137px h-43px font-Graphik font-normal text-h5 text-white">{{contents.infosContact.number}}</p>
-            </div>
-            <div class="flex flex-row  items-center">
-              <a><div class="text-white"><icon-base class="w-8 h-8"><Envelop/></icon-base></div></a>
-              <p class="w-245px h-43px font-Graphik font-normal text-h5 text-white">{{contents.infosContact.email}}</p>
-            </div>
-          </div>
-          <img class="m-auto" :src="image" :alt="title">
-          <div class="flex flex-row justify-start">
-            <a><div class="text-white"><icon-base class="w-8 h-8 m-2.5" ><Tweeter/></icon-base></div></a>
-            <a><div class="text-white"><icon-base class="w-8 h-8 m-2.5"><Facebook/></icon-base></div></a>
-            <a><div class="text-white"><icon-base class="w-8 h-8 m-2.5"><Linkedin/></icon-base></div></a>
-          </div>
+    <div class="flex flex-col">
+      <div class="flex flex-col flex-start">
+        <div :class="isMobile?`flex flex-row justify-center`:`flex flex-col items-center`"
+              v-for="(media,index) in datas.mediaCom" :key="index" >
+          <a><div class="text-white"><img  :src="media.link" alt="media.name"/></div></a>
+          <p class="w-313px h-66px font-Graphik font-normal text-h5 text-white">{{media.detail}}</p>
+        </div>
+      <img class="m-auto mb-2.5" :src="image" :alt="title">
+      <div class="flex justify-around">
+        <div v-for="(media,index) in datas.socialMedia" :key="index" class="flex flex-row justify-between">
+          <a><img :src="media.link" alt ="media.name"></a>
         </div>
       </div>
+    </div>
+    </div>
+      
     
 
   </section>
 </template>
 
 <script>
-import IconBase from '../components/UI/IconBase.vue'
-import Facebook from '../components/UI/socialMedia/Facebook.vue'
-import Linkedin from '../components/UI/socialMedia/Linkedin.vue'
-import Tweeter from '../components/UI/socialMedia/Tweeter.vue'
-import Phone from '../components/UI/socialMedia/Phone.vue'
-import Envelop from '../components/UI/socialMedia/Envelop.vue'
-import Address from '../components/UI/socialMedia/Address.vue'
 
 export default {
   name: 'TheFooter',
-    components:{
-    IconBase,
-    Facebook,
-    Linkedin,
-    Tweeter,
-    Phone,
-    Address,
-    Envelop,
+  props: {
+    datas: {
+        type: Object
+    },
+    isMobile: {
+        type: Boolean
+    },
+      sWidth: {
+        type: Number
+    },
   },
     data(){
     return {

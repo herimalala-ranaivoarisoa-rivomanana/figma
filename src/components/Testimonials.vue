@@ -1,11 +1,11 @@
 <template>
-  <section class="w-full h-auto m-auto">
-    <div class="m-auto w-1096px h-auto flex flex-col">
-      <p class="mt-24 mb-20 font-Graphik font-normal text-h2 text-text-primary">{{title}}</p>
-      <div class="m-auto w-987px flex flex-col items-center"
+  <section class="w-screen m-auto mb-20">
+    <div class="m-auto flex flex-col">
+      <p class="mb-20 font-Graphik font-normal text-h2 text-text-primary">{{title}}</p>
+      <div class="m-auto flex flex-col items-center"
            v-for="client in clients" :key="client.id">
         <img class="m-auto mb-12 " :src="client.brand" :alt="client.title">
-        <div class="m-auto mb-20 center w-552px h-100px">
+        <div class="m-auto max-width-987 mb-20 center h-100px">
           <p class=" font-Graphik font-normal text-h3 text-text-secondary">{{client.message}}</p>
         </div>
         <div class="flex justify-between">

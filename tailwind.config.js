@@ -18,13 +18,21 @@ module.exports = {
         'logo-social':'240px',
       },
       maxWidth:{
+        '552':'552px',
+        '987':'987px',
         '1440':'1440px',
         '1046':'1046px',
+        '1096':'1096px',
         'fullscreen':'1776px',
         'herolight':'1243.3px',
         'title':'672px',
         'desc':'766px',
         'features':'869px',
+      },
+      minHeight:{
+         '193':'193px',
+         '54':'54px',
+         '60':'60px'
       },
       fontSize:{
         'p':['18px',{
