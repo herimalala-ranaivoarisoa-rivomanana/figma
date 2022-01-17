@@ -18,13 +18,15 @@
         <div class="w-255px m-auto">
           <p class="mb-5 font-Graphik font-bold text-h4 justify-center text-text-primary">{{feature.title}}</p>
         </div>
-        <div class="w-255px m-auto">
+        <div class="maw-w-255 m-auto">
           <p class="mb-5font-Graphik font-normal text-p justify-center text-text-secondary">{{feature.description}}</p>
         </div>
       </div>
     </div>
     <div v-if="!isMobile" class="m-auto shrink-1">
-      <img  class="m-auto mx-logo" src="images/videoscreen.png">
+      <video class="m-auto mx-logo object-cover" controls poster="images/videoscreen.png">
+       <source type="video/mp4" src="https://youtu.be/axDzyLEfYgU">
+      </video>
     </div>
 </section>
 </template>

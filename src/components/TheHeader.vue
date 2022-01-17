@@ -15,7 +15,7 @@
           <img :src="datas.logo.link" :alt="datas.logo.name">
       </div>
       <div v-if="!isMobile" class="m-0 ml-logo-social flex flex-row items-center ">
-          <a class="mx-social"  v-for="social in datas.socialMedia" :key="social.id">
+          <a class="mx-social"  v-for="social in datas.socialMedia" :key="social.id" :href="social.href">
             <img class="w-33.32px h-33.32px" :src="social.link" :alt="social.name">
           </a>
       </div>

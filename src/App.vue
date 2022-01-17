@@ -40,9 +40,9 @@ export default {
     screen:'2xl',
       datas:{
       socialMedia:[
-          {id:1,name:'tweeter',link:"sources/socialMedia/Background/tweeter.svg"},
-          {id:2,name:'facebook',link:"sources/socialMedia/Background/facebook.svg"},
-          {id:2,name:'linkedin',link:"sources/socialMedia/Background/linkedin.svg"},
+          {id:1,name:'tweeter',link:"sources/socialMedia/Background/tweeter.svg",href:"https://twitter.com/figmadesign"},
+          {id:2,name:'facebook',link:"sources/socialMedia/Background/facebook.svg",href:"https://www.facebook.com/figmadesign"},
+          {id:2,name:'linkedin',link:"sources/socialMedia/Background/linkedin.svg",href:"https://www.linkedin.com/company/figma/"},
           ],
       mediaCom:[
           {id:3,name:'address',detail:'6386 Spring St undefined Anchorage,Georgia 12473 United States', link:"sources/mediaCom/address.svg"},

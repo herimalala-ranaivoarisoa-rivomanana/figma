@@ -17,7 +17,7 @@
       <img class="m-auto mb-2.5" :src="image" :alt="title">
       <div class="flex justify-around">
         <div v-for="(media,index) in datas.socialMedia" :key="index" class="flex flex-row justify-between">
-          <a><img :src="media.link" alt ="media.name"></a>
+          <a :href="media.href"><img :src="media.link" alt ="media.name"></a>
         </div>
       </div>
     </div>
